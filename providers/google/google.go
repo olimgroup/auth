@@ -9,9 +9,9 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/qor/auth"
-	"github.com/qor/auth/auth_identity"
-	"github.com/qor/auth/claims"
+	"github.com/olimgroup/auth"
+	"github.com/olimgroup/auth/auth_identity"
+	"github.com/olimgroup/auth/claims"
 	"github.com/qor/qor/utils"
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/google"
@@ -102,6 +102,7 @@ func New(config *Config) *GoogleProvider {
 					schema.Provider = provider.GetName()
 					schema.UID = userInfo.Email
 					schema.Email = userInfo.Email
+					schema.Username = userInfo.Email
 					schema.FirstName = userInfo.GivenName
 					schema.LastName = userInfo.FamilyName
 					schema.Image = userInfo.Picture

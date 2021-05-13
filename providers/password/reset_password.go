@@ -9,9 +9,9 @@ import (
 
 	"html/template"
 
-	"github.com/qor/auth"
-	"github.com/qor/auth/auth_identity"
-	"github.com/qor/auth/claims"
+	"github.com/olimgroup/auth"
+	"github.com/olimgroup/auth/auth_identity"
+	"github.com/olimgroup/auth/claims"
 	"github.com/qor/mailer"
 	"github.com/qor/qor/utils"
 	"github.com/qor/session"

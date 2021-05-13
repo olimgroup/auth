@@ -7,9 +7,9 @@ import (
 	"reflect"
 
 	"github.com/google/go-github/github"
-	"github.com/qor/auth"
-	"github.com/qor/auth/auth_identity"
-	"github.com/qor/auth/claims"
+	"github.com/olimgroup/auth"
+	"github.com/olimgroup/auth/auth_identity"
+	"github.com/olimgroup/auth/claims"
 	"github.com/qor/qor/utils"
 	"golang.org/x/oauth2"
 )
