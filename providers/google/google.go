@@ -169,9 +169,7 @@ func (provider GoogleProvider) OAuthConfig(context *auth.Context) *oauth2.Config
 		scheme = context.Request.URL.Scheme
 	)
 
-	if scheme == "" {
-		scheme = "https://"
-	}
+	scheme = "https://"
 
 	return &oauth2.Config{
 		ClientID:     config.ClientID,
