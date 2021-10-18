@@ -170,7 +170,7 @@ func (provider GoogleProvider) OAuthConfig(context *auth.Context) *oauth2.Config
 	)
 
 	if scheme == "" {
-		scheme = "http://"
+		scheme = "https://"
 	}
 
 	return &oauth2.Config{
